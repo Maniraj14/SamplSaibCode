@@ -1,0 +1,27 @@
+Maniraj<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:olp="http://www.saib.com.sa/OLPWareAcquirer/" xmlns:ibd="http://www.saib.com.sa/OLPWareAcquirer/IBDisputeManager/">
+   <soap:Header>
+      <olp:messageHeader>
+         <olp:ProcessContextId>SIBC1955991483443933595</olp:ProcessContextId>
+         <olp:businessContextId>TM</olp:businessContextId>
+         <olp:applicationContextId>4</olp:applicationContextId>
+         <olp:requesterCode>SIBC</olp:requesterCode>
+         <olp:machineIPAddress>10.10.21.57</olp:machineIPAddress>
+         <olp:userPrincipleName>1026</olp:userPrincipleName>
+         <olp:requestedTimestamp>2018-01-03T14:45:33</olp:requestedTimestamp>
+         <olp:channelId>1</olp:channelId>
+         <olp:LanguageCode>en</olp:LanguageCode>
+         <olp:VersionNumber>1.0</olp:VersionNumber>
+      </olp:messageHeader>
+   </soap:Header>
+   <soap:Body>
+      <ibd:InitiateDispute>
+         <InitiateDisputeRequest>
+            <sadadTransactionNumber>P1000000000000014835</sadadTransactionNumber>
+            <category>2</category>
+            <disputeDetails>Testing</disputeDetails>
+            <!--Optional:-->
+            <customerType>1</customerType>
+         </InitiateDisputeRequest>
+      </ibd:InitiateDispute>
+   </soap:Body>
+</soap:Envelope>
